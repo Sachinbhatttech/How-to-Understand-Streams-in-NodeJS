@@ -7,7 +7,7 @@ This is another installment in my series of articles where I try to demystify bi
 Before we move on to some code, let's answer the basic questions:
 
 What is a Stream? 
-A stream is an "infinite" flow of data that is sent in small chunks - period. For example, it's the opposite of an array, which will have a predefined size. You can add new elements to an array, but you can always ask how many items there are. With a stream, you don't know when the data will stop flowing - in a network environment, that is. In C, for example, you could use [.fseek()](https://www.tutorialspoint.com/c_standard_library/c_function_fseek.htm) to find the total length of a open file. But in NodeJS, this is not the case - at least, I haven't discovered a method to check the file size if the file was opened as a Stream.
+A stream is an "infinite" flow of data that is sent in small chunks - period. For example, it's the opposite of an array, which will have a predefined size. You can add new elements to an array, but you can always ask how many items there are. With a stream, you don't know when the data will stop flowing - in a network environment, that is. In [C](https://www.scaler.com/topics/c/), for example, you could use [.fseek()](https://www.tutorialspoint.com/c_standard_library/c_function_fseek.htm) to find the total length of a open file. But in NodeJS, this is not the case - at least, I haven't discovered a method to check the file size if the file was opened as a Stream.
 
 # I'm reading a file as a stream, so I know the size - right?
 
